@@ -1,0 +1,124 @@
+{%  extends 'main.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+
+    <title>TUMOR</title>
+    <link rel = "shortcut icon" type="image" href="{% static 'images/user-image.jpg' %}">
+
+    <style>
+    .body{
+        background-image: linear-gradient(to top right, #82F8A8, #02F6FC);
+        padding: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    </style>
+
+
+</head>
+
+<body class="body">
+    <div>
+        <h1 class="ml3" style="text-align: center; color: #fff; margin: 20px;"> Uploaded Image</h1>
+        <h2 style="text-align: center"> <img src={{filePathName}} alt='imagename' height="500px" width="400px"></h2>
+        <div class="container gallery-h1">
+            <h1 class="text-center mt-4 mb-4" style="background-color:DodgerBlue;">Glioma Tumor Detected</h1>
+        </div>
+        <div>
+            <!--googleoff: all--><h2>Treatments and Precautions</h2><!--googleon: all--><div class=" access-modal right p-3">
+        <div class="dialog-backdrop">
+        <div id="dialogId53611900" role="dialog" aria-labelledby="label53611900" aria-modal="true" class="hidden" data-url-tracking="true">
+            <div class="image-lightbox-container">
+                <!--googleoff: all-->
+
+                <div class="text lightbox-text">
+                    <h3 aria-hidden="true">Glioma</h3>
+                    <p class="caption"></p><p>Gliomas begin in the gluey supportive (glial cells) that surround nerve cells in the brain.</p><p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class=" access-modal right p-3">
+        <p>Glioma is a type of tumor that occurs in the brain and spinal cord. Gliomas begin in the gluey supportive cells (glial cells) that surround nerve cells and help them function.</p>
+        <p>Three types of glial cells can produce tumors. Gliomas are classified according to the type of glial cell involved in the tumor, as well as the tumor's genetic features, which can help predict how the tumor will behave over time and the treatments most likely to work.</p><div id="ad-mobile-top-container"></div>
+        <p>Types of glioma include:</p>
+    <ul>
+        <li><strong>Astrocytomas,</strong> including astrocytoma, anaplastic astrocytoma and glioblastoma</li>
+        <li><strong>Ependymomas,</strong> including anaplastic ependymoma, myxopapillary ependymoma and subependymoma </li>
+        <li><strong>Oligodendrogliomas,</strong> including oligodendroglioma, anaplastic oligodendroglioma and anaplastic oligoastrocytoma</li>
+    </ul>
+        <p>A glioma can affect your brain function and be life-threatening depending on its location and rate of growth.</p>
+        <p>Gliomas are one of the most common types of primary brain tumors.</p>
+        <p>The type of glioma you have helps determine your treatment and your prognosis. In general, glioma treatment options include surgery, radiation therapy, chemotherapy, targeted therapy and experimental clinical trials.</p>
+        <h2>Types</h2>
+
+    <div>
+        <div>
+                    <ol class="content">
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Astrocytoma">Astrocytoma</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Ependymoma">Ependymoma</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Glioblastoma">Glioblastoma</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Oligodendroglioma">Oligodendroglioma</a>
+                    </li>
+                    </ol>
+        </div>
+    </div>
+        <h2>Symptoms</h2><p>The symptoms of glioma vary by tumor type as well as the tumor's size, location and rate of growth.</p>
+        <p>Common signs and symptoms of gliomas include:</p>
+    <ul>
+        <li>Headache</li>
+        <li>Nausea or vomiting</li>
+        <li>Confusion or a decline in brain function</li>
+        <li>Memory loss</li>
+        <li>Personality changes or irritability</li>
+        <li>Difficulty with balance</li>
+        <li>Urinary incontinence</li>
+        <li>Vision problems, such as blurred vision, double vision or loss of peripheral vision</li>
+        <li>Speech difficulties</li>
+        <li>Seizures, especially in someone without a history of seizures</li>
+    </ul>
+                <h3>When to see a doctor</h3><p>Make an appointment with your doctor if you have any signs and symptoms common to glioma.</p>
+                <div class="contentbox">
+                <h2 style="color:Tomato;">Causes</h2><p>Like most primary brain tumors, the exact cause of gliomas is not known. But there are some factors that may increase your risk of a brain tumor.</p>
+                <h2>Risk factors</h2><p>Like most primary brain tumors, the exact cause of gliomas is not known. But there are some factors that may increase your risk of a brain tumor. Risk factors include:</p>
+    <ul>
+        <li><strong>Your age.</strong> Your risk of a brain tumor increases as you age. Gliomas are most common in adults between ages 45 and 65 years old. However, a brain tumor can occur at any age. Certain types of gliomas, such as ependymomas and pilocytic astrocytomas, are more common in children and young adults.</li>
+        <li>
+        <p><strong>Exposure to radiation.</strong> People who have been exposed to a type of radiation called ionizing radiation have an increased risk of brain tumor. Examples of ionizing radiation include radiation therapy used to treat cancer and radiation exposure caused by atomic bombs.</p>
+        <p>More-common forms of radiation, such as electromagnetic fields from power lines and radiofrequency radiation from microwave ovens have not been shown to increase the risk of glioma.</p>
+        <p>It isn't clear whether cellphone use increases the risk of brain cancer. Some studies have found a possible association between cellphone use and a type of brain cancer called acoustic neuroma. Many other studies have found no association. Because cellphones are a relatively new factor, more long-term research is needed to understand the potential impact on cancer risk. For the time being, if you're concerned about the possible link between cellphones and cancer, experts recommend limiting your exposure by using a speaker or hands-free device, which keeps the cellphone itself away from your head.</p>
+        </li>
+        <li><strong>Family history of glioma.</strong> It's rare for glioma to run in families. But having a family history of glioma can double the risk of developing it. Some genes have been weakly associated with glioma, but more study is needed to confirm a link between these genetic variations and brain tumors.</li>
+    </ul>
+        <h2></h2>
+        <p>
+            <a id="phmaincontent_0_phleftchannel_1_SectionRepeater_phclinicaltrials_0_7_ctLink_7"></a>
+        </p>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
+{% endblock content %}
+

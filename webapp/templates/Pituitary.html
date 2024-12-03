@@ -1,0 +1,147 @@
+{%  extends 'main.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+
+    <title>TUMOR</title>
+    <link rel = "shortcut icon" type="image" href="{% static 'images/user-image.jpg' %}">
+
+    <style>
+     .body{
+         background-image: linear-gradient(to top right, #82F8A8, #02F6FC);
+         padding: 20px;
+         margin-left: 10%;
+         margin-right: 10%;
+     }
+    </style>
+
+</head>
+
+<body class="body">
+    <div>
+        <h1 class="ml3" style="text-align: center; color: #fff; margin: 20px;"> Uploaded Image</h1>
+        <h2 style="text-align: center"> <img src={{filePathName}} alt='imagename' height="500px" width="400px"></h2>
+        <div class="container gallery-h1">
+            <h1 class="text-center mt-4 mb-4" style="background-color:DodgerBlue;">Pituitary Tumor Detected</h1>
+        </div>
+
+        <!--googleoff: all--><h2 style="color:Tomato;"></h2><!--googleon: all--><div class=" access-modal right p-3">
+
+        <h3 aria-hidden="true">Treatments and Precautions</h3>
+        <p class="caption"></p><p>A pituitary tumor is a tumor that forms in the pituitary gland near the brain that can cause changes in hormone levels in the body. This illustration shows a smaller tumor (microadenoma).</p><p></p>
+        <p>Pituitary tumors are abnormal growths that develop in your pituitary gland. Some pituitary tumors result in too much of the hormones that regulate important functions of your body. Some pituitary tumors can cause your pituitary gland to produce lower levels of hormones.</p>
+        <p>Most pituitary tumors are noncancerous (benign) growths (adenomas). Adenomas remain in your pituitary gland or surrounding tissues and don't spread to other parts of your body.</p><div id="ad-mobile-top-container"></div>
+        <p>There are various options for treating pituitary tumors, including removing the tumor, controlling its growth and managing your hormone levels with medications. Your doctor may recommend observation — or a ''wait and see'' approach.</p>
+        </div>
+    </div>
+
+    <h2>Symptoms</h2><p>Not all pituitary tumors cause symptoms. Sometimes they are identified incidentally on an imaging test such as an MRI or CT performed for some other reason. Pituitary tumors that make hormones (functioning) can cause a variety of signs and symptoms depending on the hormone they produce. The signs and symptoms of pituitary tumors that don't make hormones (nonfunctioning) are related to their growth and the pressure they put on other structures.</p>
+    <p>Large pituitary tumors — those measuring about 1 centimeter (slightly less than a half-inch) or larger — are known as macroadenomas. Smaller tumors are called microadenomas. Because of the size of macroadenomas, they can put pressure on the normal pituitary gland and nearby structures.</p>
+    <h3>Signs and symptoms related to tumor pressure</h3><p>Signs and symptoms of pressure from a pituitary tumor may include:</p>
+
+    <ul>
+        <li>Headache</li>
+        <li>Vision loss, particularly loss of peripheral vision</li>
+    </ul>
+
+    <h3>Symptoms related to hormone level changes</h3><h4>Deficiency</h4>
+    <p>Large tumors could cause hormonal deficiencies. Signs and symptoms include:</p>
+    <ul>
+        <li>Nausea and vomiting</li>
+        <li>Weakness</li>
+        <li>Feeling cold</li>
+        <li>Less frequent or no menstrual periods</li>
+        <li>Sexual dysfunction</li>
+        <li>Increased amount of urine</li>
+        <li>Unintended weight loss or gain</li>
+    </ul>
+    <h4>Overfunctioning</h4>
+    <p>Functioning pituitary tumors cause an overproduction of hormones. Different types of functioning tumors in your pituitary gland cause specific signs and symptoms and sometimes a combination of them.</p>
+    <h4>Adrenocorticotropic hormone-secreting (ACTH) tumors</h4>
+    <p><abbr title="Adrenocorticotropic hormone">ACTH</abbr> tumors produce the hormone adrenocorticotropin, which stimulates your adrenal glands to make the hormone cortisol. Cushing syndrome results from your adrenal glands producing too much cortisol. Possible signs and symptoms of Cushing syndrome include:</p>
+    <ul>
+        <li>Fat accumulation around your midsection and upper back</li>
+        <li>Exaggerated facial roundness</li>
+        <li>Thinning of the arms and legs with muscle weakness</li>
+        <li>High blood pressure</li>
+        <li>High blood sugar</li>
+        <li>Acne</li>
+        <li>Bone weakening</li>
+        <li>Bruising</li>
+        <li>Stretch marks</li>
+        <li>Anxiety, irritability or depression</li>
+    </ul>
+    <h4>Growth hormone-secreting tumors</h4>
+    <p>These tumors produce excess growth hormone (acromegaly), which can cause:</p>
+    <ul>
+        <li>Coarsened facial features</li>
+        <li>Enlarged hands and feet</li>
+        <li>Excess sweating</li>
+        <li>High blood sugar</li>
+        <li>Heart problems</li>
+        <li>Joint pain</li>
+        <li>Misaligned teeth</li>
+        <li>Increased body hair</li>
+    </ul>
+    <p>Children and adolescents might grow too fast or too tall.</p>
+    <h4>Prolactin-secreting tumors</h4>
+    <p>Overproduction of prolactin from a pituitary tumor (prolactinoma) can cause a decrease in normal levels of sex hormones — estrogen in women and testosterone in men. Excessive prolactin in the blood affects men and women differently.</p>
+    <p>In women, prolactinoma might cause:</p>
+    <ul>
+        <li>Irregular menstrual periods</li>
+        <li>Lack of menstrual periods</li>
+        <li>Milky discharge from the breasts</li>
+    </ul>
+    <p>In men, a prolactin-producing tumor may cause male hypogonadism. Signs and symptoms can include:</p>
+    <ul>
+        <li>Erectile dysfunction</li>
+        <li>Lowered sperm count</li>
+        <li>Loss of sex drive</li>
+        <li>Breast growth</li>
+    </ul>
+    <h4>Thyroid-stimulating hormone-secreting tumors</h4>
+    <p>When a pituitary tumor overproduces thyroid-stimulating hormone, your thyroid gland makes too much of the hormone thyroxine. This is a rare cause of hyperthyroidism or overactive thyroid disease. Hyperthyroidism can accelerate your body's metabolism, causing:</p>
+    <ul>
+        <li>Weight loss</li>
+        <li>Rapid or irregular heartbeat</li>
+        <li>Nervousness or irritability</li>
+        <li>Frequent bowel movements</li>
+        <li>Excessive sweating</li>
+    </ul>
+
+    <h3>When to see a doctor</h3><p>If you develop signs and symptoms that might be associated with a pituitary tumor, see your doctor. Pituitary tumors often can be treated to return your hormone levels to normal and alleviate your signs and symptoms.</p>
+    <p>If you know that multiple endocrine neoplasia, type 1 (MEN 1) runs in your family, talk to your doctor about periodic tests that may help detect a pituitary tumor early.</p>
+    <h2 style="color:Tomato;"> Causes</h2><div class=" access-modal right p-3">
+    <h3 aria-hidden="true">Pituitary gland and hypothalamus</h3>
+    <p class="caption"></p><p>The pituitary gland and the hypothalamus are located within the brain and control hormone production.</p><p></p>
+    <p>The cause of uncontrolled cell growth in the pituitary gland, which creates a tumor, remains unknown.</p>
+    <p>The pituitary gland is a small, bean-shaped gland situated at the base of your brain, somewhat behind your nose and between your ears. Despite its small size, the gland influences nearly every part of your body. The hormones it produces help regulate important functions, such as growth, blood pressure and reproduction.</p>
+    <p>A small percentage of pituitary tumor cases run in families, but most have no apparent hereditary factor. Still, scientists suspect that genetic alterations play an important role in how pituitary tumors develop.</p>
+    <h2>Risk factors</h2><p>People with a family history of certain hereditary conditions, such as multiple endocrine neoplasia, type 1 (MEN 1), have an increased risk of pituitary tumors. In <abbr title="multiple endocrine neoplasia, type 1">MEN 1</abbr>, multiple tumors occur in various glands of the endocrine system. Genetic testing is available for this disorder.</p>
+    <h2>Complications</h2><p>Pituitary tumors usually don't grow or spread extensively. However, they can affect your health, possibly causing:</p>
+    </div>
+    <ul>
+        <li><strong>Vision loss.</strong> A pituitary tumor can put pressure on the optic nerves.</li>
+        <li><strong>Permanent hormone deficiency.</strong> The presence of a pituitary tumor or the removal of one may permanently alter your hormone supply, which may need to be replaced with hormone medications.</li>
+    </ul>
+        <p>A rare but potentially serious complication of a pituitary tumor is pituitary apoplexy, when sudden bleeding into the tumor occurs. It feels like the most severe headache you've ever had. Pituitary apoplexy requires emergency treatment, usually with corticosteroids and possibly surgery.</p>
+        <h2></h2>
+    <p>
+        <a id="phmaincontent_0_phleftchannel_1_SectionRepeater_phclinicaltrials_0_10_ctLink_10"></a>
+    </p>
+    <div class="sub">
+    </div>
+</body>
+</html>
+{% endblock content %}

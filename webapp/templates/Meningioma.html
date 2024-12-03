@@ -1,0 +1,83 @@
+{%  extends 'main.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+    .body{
+         background-image: linear-gradient(to top right, #82F8A8, #02F6FC);
+         padding: 20px;
+         margin-left: 10%;
+         margin-right: 10%;
+    }
+    </style>
+</head>
+<body class="body">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+
+    <link rel = "shortcut icon" type="image" href="{% static 'images/user-image.jpg' %}">
+
+    <h1 class="ml3" style="text-align: center; color: #fff; margin: 20px;"> Uploaded Image</h1>
+    <h2 style="text-align: center"> <img src={{filePathName}} alt='imagename' height="500px" width="400px"></h2>
+    <div>
+        <div class="container gallery-h1">
+            <h1 class="text-center mt-4 mb-4" style="background-color:DodgerBlue;">Meningioma Tumor Detected</h1>
+        </div>
+        <!--googleoff: all--><h2>Treatments and Precautions</h2><!--googleon: all-->
+        <p>Cancer treatment is the use of surgery, radiation, medications and other therapies to cure a cancer, shrink a cancer or stop the progression of a cancer.</p>
+        <p>Many cancer treatments exist. Depending on your particular situation, you may receive one treatment or you may receive a combination of treatments.</p>
+        <div id="ad-mobile-top-container"></div><!--googleoff: all-->
+        <div class="acces-list-container rc-list">
+            <h3>Products &amp; Services</h3>
+            <div class="list-wrapper"><ul id="ul_5cad3603-6c0e-45d0-9a6c-e22e9aa3b98c" class="listGroup"><li class="acces-listitems"><a href="https://links.e.response.mayoclinic.org/prdemailsignup">Sign up for Email: Get Your Free Resource – Coping with Cancer</a></li></ul>
+            </div>
+        </div><!--googleon: all-->
+        <h2>Why it's done</h2>The goal of cancer treatment is to achieve a cure for your cancer, allowing you to live a normal life span. This may or may not be possible, depending on your specific situation. If a cure isn't possible, your treatments may be used to shrink your cancer or slow the growth of your cancer to allow you to live symptom free for as long as possible.
+        <p>Cancer treatments may be used as:</p>
+        <ul>
+            <li>
+                <p><strong>Primary treatment.</strong> The goal of a primary treatment is to completely remove the cancer from your body or kill all the cancer cells.</p>
+                <p>Any cancer treatment can be used as a primary treatment, but the most common primary cancer treatment for the most common types of cancer is surgery. If your cancer is particularly sensitive to radiation therapy or chemotherapy, you may receive one of those therapies as your primary treatment.</p>
+            </li>
+            <li>
+                <p><strong>Adjuvant treatment.</strong> The goal of adjuvant therapy is to kill any cancer cells that may remain after primary treatment in order to reduce the chance that the cancer will recur.</p>
+                <p>Any cancer treatment can be used as an adjuvant therapy. Common adjuvant therapies include chemotherapy, radiation therapy and hormone therapy.</p>
+                <p>Neoadjuvant therapy is similar, but treatments are used before the primary treatment in order to make the primary treatment easier or more effective.</p>
+            </li>
+            <li>
+                <p><strong>Palliative treatment.</strong> Palliative treatments may help relieve side effects of treatment or signs and symptoms caused by cancer itself. Surgery, radiation, chemotherapy and hormone therapy can all be used to relieve symptoms. Other medications may relieve symptoms such as pain and shortness of breath.</p>
+                <p>Palliative treatment can be used at the same time as other treatments intended to cure your cancer.</p>
+            </li>
+        </ul>
+
+        <h2>What you can expect</h2><p>Many cancer treatments are available. Your treatment options will depend on several factors, such as the type and stage of your cancer, your general health, and your preferences. Together you and your doctor can weigh the benefits and risks of each cancer treatment to determine which is best for you.</p>
+        <p>Cancer treatment options include:</p>
+        <ul>
+            <li><strong>Surgery.</strong> The goal of surgery is to remove the cancer or as much of the cancer as possible.</li>
+            <li><strong>Chemotherapy.</strong> Chemotherapy uses drugs to kill cancer cells.</li>
+            <li><strong>Radiation therapy.</strong> Radiation therapy uses high-powered energy beams, such as X-rays or protons, to kill cancer cells. Radiation treatment can come from a machine outside your body (external beam radiation), or it can be placed inside your body (brachytherapy).</li>
+            <li>
+                <p><strong>Bone marrow transplant.</strong> Your bone marrow is the material inside your bones that makes blood cells from blood stem cells. A bone marrow transplant, also knowns as a stem cell transplant, can use your own bone marrow stem cells or those from a donor.</p>
+                <p>A bone marrow transplant allows your doctor to use higher doses of chemotherapy to treat your cancer. It may also be used to replace diseased bone marrow.</p>
+            </li>
+            <li><strong>Immunotherapy.</strong> Immunotherapy, also known as biological therapy, uses your body's immune system to fight cancer. Cancer can survive unchecked in your body because your immune system doesn't recognize it as an intruder. Immunotherapy can help your immune system "see" the cancer and attack it.</li>
+            <li><strong>Hormone therapy.</strong> Some types of cancer are fueled by your body's hormones. Examples include breast cancer and prostate cancer. Removing those hormones from the body or blocking their effects may cause the cancer cells to stop growing.</li>
+            <li><strong>Targeted drug therapy.</strong> Targeted drug treatment focuses on specific abnormalities within cancer cells that allow them to survive.</li>
+            <li><strong>Cryoablation.</strong> This treatment kills cancer cells with cold. During cryoablation, a thin, wandlike needle (cryoprobe) is inserted through your skin and directly into the cancerous tumor. A gas is pumped into the cryoprobe in order to freeze the tissue. Then the tissue is allowed to thaw. The freezing and thawing process is repeated several times during the same treatment session in order to kill the cancer cells.</li>
+            <li><strong>Radiofrequency ablation.</strong> This treatment uses electrical energy to heat cancer cells, causing them to die. During radiofrequency ablation, a doctor guides a thin needle through the skin or through an incision and into the cancer tissue. High-frequency energy passes through the needle and causes the surrounding tissue to heat up, killing the nearby cells.</li>
+            <li><strong>Clinical trials.</strong> Clinical trials are studies to investigate new ways of treating cancer. Thousands of cancer clinical trials are underway.</li>
+        </ul>
+            <p>Other treatments may be available to you, depending on your type of cancer.</p>
+    </div>
+</body>
+</html>
+{% endblock content %}

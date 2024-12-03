@@ -1,0 +1,171 @@
+{%  extends 'main.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Disease </title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/particles.css' %}">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="{% static 'js/animations.js'%}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" media="screen" href="{% static 'css/style.css'%}"> -->
+
+    <link rel = "shortcut icon" type="image" href="{% static 'images/user-image.jpg' %}">
+<style>
+		body, html
+		{
+		    background-image: linear-gradient(to top right, #82F8A8, #02F6FC);
+			margin: 0;
+			padding: 0;
+			height: 100%;
+		}
+
+		.user_card {
+			width: 350px;
+			margin-top: auto;
+			margin-bottom: auto;
+			background: #08B008B;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			padding: 10px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			border-radius: 5px;
+		}
+
+		.form_container {
+			margin-top: 20px;
+		}
+
+		#form-title{
+			color: #000000;
+		}
+
+		.login_btn {
+			width: 100%;
+			background: #33ccff !important;
+			color: white !important;
+		}
+
+		.login_btn:focus {
+			box-shadow: none !important;
+			outline: 0px !important;
+		}
+
+		.login_container {
+			padding: 0 2rem;
+		}
+
+		.input-group-text {
+			background: #f7ba5b !important;
+			color: white !important;
+			border: 0 !important;
+			border-radius: 0.25rem 0 0 0.25rem !important;
+		}
+
+		.input_user, .input_pass:focus {
+			box-shadow: none !important;
+			outline: 0px !important;
+		}
+
+		#messages{
+			background-color: grey;
+			color: #fff;
+			padding: 10px;
+			margin-top: 10px;
+		}
+	</style>
+
+    <style type="text/css">
+      .btn1{
+        position: absolute;
+        padding: 16px 32px;
+        text-align: center;
+        top: 25%;
+        left: 38%;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 50px;
+        background-color: white;
+        color: black;
+        border: 2px solid #555555;
+      }
+
+      .btn2{
+        position: absolute;
+        top: 40%;
+        left: 46%;
+        padding: 16px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+
+      .btn1:hover {
+        background-color: #555555;
+        color: white;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+
+      .btn2:hover {
+        background-color: #4CAF50;
+        color: white;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+    </style>
+
+</head>
+<body >
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- For text -->
+    <script type="text/javascript">
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.ml3');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({loop: true})
+        .add({
+            targets: '.ml3 .letter',
+            opacity: [0,1],
+            easing: "easeInOutQuad",
+            duration: 2250,
+            delay: (el, i) => 150 * (i+1)
+        }).add({
+            targets: '.ml3',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
+  </script>
+
+  <h1 class="ml3" style="background-color:#59788E; text-align: center; color:#FFFFFF;">BRAIN TUMOR DETECTION</h1>
+  <br><h3 class="ml3" style="text-align: center;">Add Your Image to Check Status</h3>
+  <form action="{% url 'predictImage' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" id='doc' class="btn1"  name="document">
+    <br><button class="btn2" onclick="submit" type="submit"><span style=" border-radius: 20px; ">Upload</span></button>
+  </form>
+  <br>
+
+  <div id="particles-js" style="z-index: -1; width: 100%; height: 100%;margin: 0;
+    padding: 0;
+    /* position it to start at the top of the page */
+    top: 0; position: fixed;background-image: linear-gradient(to top, #2c5f2d 0%, #97d9e1 100%);">
+  </div>
+  <script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>
+{% endblock content %}
